@@ -70,8 +70,9 @@ export class DatosPoligonoComponent implements OnInit {
     ]
   }];
 
-  mayorNumeroPuntos = 5;
-  
+ //mayorNumeroPuntos = 5;
+  mayorNumeroPuntos = Math.max.apply(Math, this.poligonos.map(function(o) { return o.puntos.length; }))
+
   constructor() {}
 
   ngOnInit() {}
