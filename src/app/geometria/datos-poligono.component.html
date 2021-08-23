@@ -2,9 +2,9 @@
   <tr>
     <th>Nombre</th>
     <th>Lados</th>
-    <th [attr.colspan]="poligono.puntos.length">Puntos</th>
+    <th [attr.colspan]="mayorNumeroPuntos">Puntos</th>
   </tr>
-  <tr>
+  <tr *ngFor="let poligono of poligonos">
     <td>{{poligono.nombre}}</td>
     <td>{{poligono.puntos.length}}</td>
     <td *ngFor="let punto of poligono.puntos">{{punto.x}},{{punto.y}}</td>

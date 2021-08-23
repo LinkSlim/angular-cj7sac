@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./datos-poligono.component.css']
 })
 export class DatosPoligonoComponent implements OnInit {
-  poligono = {
+  poligonos = [{
     nombre: 'cuadrado',
     puntos: [
       {
@@ -26,7 +26,52 @@ export class DatosPoligonoComponent implements OnInit {
         y: 10
       }
     ]
-  };
+  },
+  {
+    nombre: 'triangulo',
+    puntos: [
+      {
+        x: 10,
+        y: 5
+      },
+      {
+        x: 15,
+        y: 5
+      },
+      {
+        x: 15,
+        y: 10
+      }
+    ]
+  },
+  {
+    nombre: 'pentagono',
+    puntos: [
+      {
+        x: 10,
+        y: 5
+      },
+      {
+        x: 15,
+        y: 5
+      },
+      {
+        x: 15,
+        y: 10
+      },
+      {
+        x: 15,
+        y: 10
+      },
+      {
+        x: 15,
+        y: 10
+      }
+    ]
+  }];
+
+  mayorNumeroPuntos = 5;
+  
   constructor() {}
 
   ngOnInit() {}
