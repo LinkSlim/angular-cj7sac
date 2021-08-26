@@ -69,6 +69,35 @@ export class DatosPoligonoComponent implements OnInit {
           y: 10
         }
       ]
+    },
+    {
+      nombre: 'hexagono',
+      puntos: [
+        {
+          x: 10,
+          y: 5
+        },
+        {
+          x: 15,
+          y: 5
+        },
+        {
+          x: 15,
+          y: 10
+        },
+        {
+          x: 15,
+          y: 10
+        },
+        {
+          x: 15,
+          y: 10
+        },
+        {
+          x: 50,
+          y: 50
+        }
+      ]
     }
   ];
 
